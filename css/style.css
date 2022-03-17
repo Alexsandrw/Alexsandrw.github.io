@@ -97,20 +97,54 @@ header{
     text-align: center;
 }
 
+.telephone_svg{
+    height: 20px;
+    width: 20px;
+}
+
+.button_phone{
+    height: 30px;
+    width: 50px;
+    border-radius: 5px;
+}
+
+.button_menu{
+    background: #000;
+    border: #fff solid 3px;
+    border-radius: 15px;
+    padding: 5px 5px;
+
+}
+
+.dropdown-menu-2 ul{
+    width: 200px;
+}
+
+.dropdown-menu-2 li{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    border-bottom: #000 solid 1px;
+    text-align: center;
+    padding: 1rem 0px;
+}
+
+.dropdown-menu-2 li:nth-child(5){
+    border-bottom: #000 solid 0px;
+}
+
+.dropdown-menu-2 li:nth-child(6){
+    border-bottom: #000 solid 0px;
+}
+
+.dropdown-menu-2 li:nth-child(7){
+    border-bottom: #000 solid 0px;
+}
+
 .main{
-    background:#EEEEEE url("../img/benz.png") 15vw no-repeat ;
-}
-
-@media screen and (max-device-width: 1399px){
-    .main{
-        background:#EEEEEE url("../img/benz.png") left/130vw no-repeat ;
-    }
-}
-
-@media screen and (max-device-width: 1199px){
-    .main{
-        background:#EEEEEE url("../img/benz.png") 1vw no-repeat ;
-    }
+    position: relative;
+    overflow: hidden;
 }
 
 .main h1{
@@ -122,6 +156,36 @@ header{
 .main h4{
     font-size: 24px;
     line-height: 46px;
+}
+
+.content{
+    z-index: 2;
+}
+
+.videoBackground{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    padding: 0px 0px;
+}
+
+.videoBackground::after{
+    content: " ";
+    display: block;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+}
+
+.videoMedia{
+    width: 100vw;
+    height: auto;
+    z-index: 0;
 }
 
 .titleBox button{
@@ -297,8 +361,8 @@ header{
 }
 
 .case img{
-    max-width: 75%;
-    max-height: 75vh;
+    max-width: 60%;
+    height: auto;
 }
 
 .communication{
@@ -383,4 +447,43 @@ header{
 footer{
     height: 75px;
     background-color: #000;
+}
+
+
+@media screen and (min-device-width: 768px){
+    .main{
+        background:#EEEEEE;
+    }
+}
+
+@media screen and (min-device-width: 992px){
+    .main{
+        background:#EEEEEE url("../img/benz.png") 5vw/cover no-repeat ;
+    }
+}
+
+@media screen and (min-device-width: 1199px){
+    .main{
+        background:#EEEEEE url("../img/benz.png") 1vw no-repeat ;
+    }
+}
+
+
+@media screen and (min-device-width: 1399px){
+    .main{
+        background:#EEEEEE url("../img/benz.png") left/130vw no-repeat ;
+    }
+}
+
+@media screen and (max-device-width: 992px){
+    .main{
+        color: #fff;
+        background:#EEEEEE;
+    }
+    .titleBox button{
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0);
+        border: #fff solid 2px;
+        box-shadow: 0px 0px 0px;
+    }
 }
