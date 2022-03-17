@@ -13,16 +13,16 @@
 
 <body>
 <header>
-    <nav>
-        <div class="container">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-1 text-center">
+    <nav class="h-100">
+        <div class="container h-100">
+            <div class="row h-100 justify-content-between align-items-center">
+                <div class="col-1 col-xl-2 text-center">
                     <div class="logo">
                         <a href="#">BIG DETAIL</a>
                     </div>
                 </div>
-                <div class="col-xxl-7 col-xl-8 col-9 ">
-                    <div class="menu ">
+                <div class="col-xxl-7 col-xl-8 col-9 text-center d-none d-lg-block">
+                    <div class="menu">
                         <ul class="m-0">
                             <li><a href="#statistic">О компании</a></li>
                             <li><a href="#services">Услуги</a></li>
@@ -31,10 +31,42 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-2 text-center">
+                <div class="col-2 text-center d-none d-xl-flex flex-column justify-content-between">
                     <p class="phoneNumber m-0">+7 (3532) 22-03-22</p>
-                    <p class="phoneNumber m-0">+7-903-392-03-22</p>
+                    <p class="phoneNumber m-0">+7 (903) 392-03-22</p>
                 </div>
+                <div class="col-1 d-xl-none d-none d-lg-block align-items-center justify-content-center">
+                    <div class="dropdown">
+                        <button class="button_phone dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img class="telephone_svg" src="img/telephone-fill.svg" alt="Телефонная трубка">
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end text-center" aria-labelledby="dropdownMenuButton1">
+                            <li><p class=" m-2">+7 (3532) 22-03-22</p></li>
+                            <li><p class=" m-2"> +7 (903) 392-03-22</p></li>
+                            <li><p>Ул. Мира 1/2</p></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-2 d-lg-none align-items-center justify-content-center text-center">
+                    <div class="dropdown dropdown-menu-2">
+                        <button class="button_menu" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#fff" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                        </button>
+                        <ul class="col-12 dropdown-menu dropdown-menu-end text-center" aria-labelledby="dropdownMenuButton2">
+                            <li><a href="#statistic">О компании</a></li>
+                            <li><a href="#services">Услуги</a></li>
+                            <li><a href="#case">Примеры работ</a></li>
+                            <li><a href="#communication">Контакты</a></li>
+                            <li><p class=" m-0">+7 (3532) 22-03-22</p></li>
+                            <li><p class=" m-0"> +7 (903) 392-03-22</p></li>
+                            <li><p class=" m-0">Ул. Мира 1/2</p></li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </div>
     </nav>
@@ -44,14 +76,17 @@
     <section class="main vh-100">
         <div class="container h-100">
             <div class="row h-100 align-items-center pt-xxl-0 pt-5">
-                <div class="col-6 text-left my-5 py-5 text-left">
-                    <div class="titleBox">
+                <div class="content col-xxl-5 col-xl-6 col-lg-7 col-12 text-lg-left my-5 py-5">
+                    <div class="titleBox text-lg-start text-center">
                         <h1>Доверь свою машину <br> профессионалам</h1>
                         <h4 class="my-3">В нашей детейлинг студии работают только высококвалифицированные
                             специалисты в своей сфере
                             У нас большой спектр услуг по уходу и стайлингу вашего автомобиля</h4>
                         <button>Заказать консультацию</button>
                     </div>
+                </div>
+                <div class="videoBackground">
+                    <video class="videoMedia d-lg-none" src="vid/background.MP4" autoplay muted loop></video>
                 </div>
             </div>
         </div>
@@ -65,23 +100,23 @@
                         <h2>Почему выбирают нас</h2>
                     </div>
                 </div>
-                <div class="col-12 my-5 d-flex justify-content-between align-content-between text-center">
-                    <div class="col-3 d-flex align-items-stretch justify-content-center">
-                        <div class="stat text-center">
+                <div class="col-12 my-5 d-flex flex-column flex-lg-row justify-content-lg-evenly align-content-lg-between align-items-center justify-content-between text-center">
+                    <div class="col-lg-3 col-12 d-flex justify-content-center">
+                        <div class="stat d-flex flex-column align-items-center justify-content-evenly text-center">
                             <h3 class="">15</h3>
-                            <h4 class="my-2">Лет</h4>
-                            <p class="mt-3">Наш опыт работы в <br> данной сфере</p>
+                            <h4 class="">Лет</h4>
+                            <p class="">Наш опыт работы в <br> данной сфере</p>
                         </div>
                     </div>
-                    <div class="col-4 d-flex align-content-between justify-content-center">
-                        <div class="stat text-center">
+                    <div class="col-lg-5 col-12 my-lg-0 my-4">
+                        <div class="stat d-flex flex-column align-items-center justify-content-evenly text-center">
                             <img src="img/electricCar.png" alt="">
                             <h4 class="my-3">Спектр услуг</h4>
-                            <p class="mt-2">У нас большой спектр услуг по которым вы можете к нам обратиться!</p>
+                            <p class="mt-2">У нас большой спектр услуг <br> по которым вы можете к нам обратиться!</p>
                         </div>
                     </div>
-                    <div class="col-4 d-flex align-content-between justify-content-center">
-                        <div class="stat text-center">
+                    <div class="col-lg-4 col-12">
+                        <div class="stat d-flex flex-column align-items-center justify-content-evenly text-center">
                             <img src="img/Ellipse%201.png" alt="">
                             <h4 class="my-3">Материалы</h4>
                             <p class="mt-2">В нашей работе мы используем самые качественные материалы</p>
@@ -101,8 +136,8 @@
                     </div>
                 </div>
 
-                <div class="col-12 d-flex flex-wrap my-4">
-                    <div class="d-flex col-xl-2 col-3 align-items-center justify-content-center">
+                <div class="col-12 d-flex flex-wrap my-5">
+                    <div class="d-flex col-xl-2 col-md-3 col-6 align-items-center justify-content-center">
                         <div class="service">
                             <div class="service-displayed">
                                 <img src="img/alarmSystem.jpeg" alt="">
@@ -114,7 +149,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex col-xl-2 col-3 align-items-center justify-content-center">
+                    <div class="d-flex col-xl-2 col-md-3 col-6 align-items-center justify-content-center">
                         <div class="service">
                             <div class="service-displayed">
                                 <img src="img/alarmSystem.jpeg" alt="">
@@ -126,7 +161,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex col-xl-2 col-3 align-items-center justify-content-center">
+                    <div class="d-flex col-xl-2 col-md-3 col-6 align-items-center justify-content-center">
                         <div class="service">
                             <div class="service-displayed">
                                 <img src="img/alarmSystem.jpeg" alt="">
@@ -138,7 +173,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex col-xl-2 col-3 align-items-center justify-content-center">
+                    <div class="d-flex col-xl-2 col-md-3 col-6 align-items-center justify-content-center">
                         <div class="service">
                             <div class="service-displayed">
                                 <img src="img/alarmSystem.jpeg" alt="">
@@ -150,7 +185,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex col-xl-2 col-3 align-items-center justify-content-center">
+                    <div class="d-flex col-xl-2 col-md-3 col-6 align-items-center justify-content-center">
                         <div class="service">
                             <div class="service-displayed">
                                 <img src="img/alarmSystem.jpeg" alt="">
@@ -162,7 +197,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex col-xl-2 col-3 align-items-center justify-content-center">
+                    <div class="d-flex col-xl-2 col-md-3 col-6 align-items-center justify-content-center">
                         <div class="service">
                             <div class="service-displayed">
                                 <img src="img/alarmSystem.jpeg" alt="">
@@ -174,7 +209,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex col-xl-2 col-3 align-items-center justify-content-center">
+                    <div class="d-flex col-xl-2 col-md-3 col-6 align-items-center justify-content-center">
                         <div class="service">
                             <div class="service-displayed">
                                 <img src="img/alarmSystem.jpeg" alt="">
@@ -186,7 +221,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex col-xl-2 col-3 align-items-center justify-content-center">
+                    <div class="d-flex col-xl-2 col-md-3 col-6 align-items-center justify-content-center">
                         <div class="service">
                             <div class="service-displayed">
                                 <img src="img/alarmSystem.jpeg" alt="">
@@ -198,7 +233,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex col-xl-2 col-3 align-items-center justify-content-center">
+                    <div class="d-flex col-xl-2 col-md-3 col-6 align-items-center justify-content-center">
                         <div class="service">
                             <div class="service-displayed">
                                 <img src="img/alarmSystem.jpeg" alt="">
@@ -210,103 +245,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex col-xl-2 col-3 align-items-center justify-content-center">
-                        <div class="service">
-                            <div class="service-displayed">
-                                <img src="img/alarmSystem.jpeg" alt="">
-                            </div>
-                            <div class="blackout"></div>
-                            <div class="service-hidden d-flex flex-column justify-content-evenly align-items-center h-100 w-100 text-center">
-                                <p>Установка сигнализации</p>
-                                <button>Записаться</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex col-xl-2 col-3 align-items-center justify-content-center">
-                        <div class="service">
-                            <div class="service-displayed">
-                                <img src="img/alarmSystem.jpeg" alt="">
-                            </div>
-                            <div class="blackout"></div>
-                            <div class="service-hidden d-flex flex-column justify-content-evenly align-items-center h-100 w-100 text-center">
-                                <p>Установка сигнализации</p>
-                                <button>Записаться</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex col-xl-2 col-3 align-items-center justify-content-center">
-                        <div class="service">
-                            <div class="service-displayed">
-                                <img src="img/alarmSystem.jpeg" alt="">
-                            </div>
-                            <div class="blackout"></div>
-                            <div class="service-hidden d-flex flex-column justify-content-evenly align-items-center h-100 w-100 text-center">
-                                <p>Установка сигнализации</p>
-                                <button>Записаться</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex col-xl-2 col-3 align-items-center justify-content-center">
-                        <div class="service">
-                            <div class="service-displayed">
-                                <img src="img/alarmSystem.jpeg" alt="">
-                            </div>
-                            <div class="blackout"></div>
-                            <div class="service-hidden d-flex flex-column justify-content-evenly align-items-center h-100 w-100 text-center">
-                                <p>Установка сигнализации</p>
-                                <button>Записаться</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex col-xl-2 col-3 align-items-center justify-content-center">
-                        <div class="service">
-                            <div class="service-displayed">
-                                <img src="img/alarmSystem.jpeg" alt="">
-                            </div>
-                            <div class="blackout"></div>
-                            <div class="service-hidden d-flex flex-column justify-content-evenly align-items-center h-100 w-100 text-center">
-                                <p>Установка сигнализации</p>
-                                <button>Записаться</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex col-xl-2 col-3 align-items-center justify-content-center">
-                        <div class="service">
-                            <div class="service-displayed">
-                                <img src="img/alarmSystem.jpeg" alt="">
-                            </div>
-                            <div class="blackout"></div>
-                            <div class="service-hidden d-flex flex-column justify-content-evenly align-items-center h-100 w-100 text-center">
-                                <p>Установка сигнализации</p>
-                                <button>Записаться</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex col-xl-2 col-3 align-items-center justify-content-center">
-                        <div class="service">
-                            <div class="service-displayed">
-                                <img src="img/alarmSystem.jpeg" alt="">
-                            </div>
-                            <div class="blackout"></div>
-                            <div class="service-hidden d-flex flex-column justify-content-evenly align-items-center h-100 w-100 text-center">
-                                <p>Установка сигнализации</p>
-                                <button>Записаться</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex col-xl-2 col-3 align-items-center justify-content-center">
-                        <div class="service">
-                            <div class="service-displayed">
-                                <img src="img/alarmSystem.jpeg" alt="">
-                            </div>
-                            <div class="blackout"></div>
-                            <div class="service-hidden d-flex flex-column justify-content-evenly align-items-center h-100 w-100 text-center">
-                                <p>Установка сигнализации</p>
-                                <button>Записаться</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex col-xl-2 col-3 align-items-center justify-content-center">
+                    <div class="d-flex col-xl-2 col-md-3 col-6 align-items-center justify-content-center">
                         <div class="service">
                             <div class="service-displayed">
                                 <img src="img/alarmSystem.jpeg" alt="">
@@ -331,12 +270,12 @@
                         <h2>Примеры наших работ</h2>
                     </div>
                 </div>
-                <div class="col-8 my-5 d-flex justify-content-evenly">
+                <div class="col-lg-8 col-12 my-5 d-flex justify-content-evenly">
                         <button type="button" class="btn1 btn btn-light">Мойка</button>
                         <button type="button" class="btn2 btn btn-light">Тонировка</button>
                         <button type="button" class="btn3 btn btn-light">Бронирование</button>
                 </div>
-                <div class="col-xl-8 text-center">
+                <div class="col-xl-8 col-12 text-center">
                     <div id="js-carousel-2" class="owl-carousel">
                         <div class="carousel-item d-flex justify-content-center">
                             <img src="img/lexusJOB.jpg" alt="Фото">
@@ -359,28 +298,29 @@
     <section class="communication vh-100 vw-100" id="communication">
         <div class="container h-100">
             <div class="row h-100 align-items-center justify-content-center">
-                <div class="col-8">
+                <div class="col-lg-8 col-12">
                     <form action="#">
                         <div class="container">
                             <div class="row flex-column justify-content-between align-items-center">
-                                <div class="col-xxl-5 col-6 my-4">
+                                <div class="col-xxl-5 col-xl-6 col-md-7 col-12 my-4">
                                     <div class="heading">
                                         <h2 class="text-center">Связь с нами</h2>
                                     </div>
                                 </div>
-                                <div class="col-10 d-flex justify-content-between">
+                                <div class="col-xl-10 col-12 d-flex flex-wrap justify-content-md-between justify-content-center">
                                     <div class="d-inline-block">
                                         <p>Ваше имя</p>
                                         <input class="ps-3" type="text" placeholder="Имя">
                                     </div>
+                                    <div class="col-12 d-block d-md-none my-3"></div>
                                     <div class="d-inline-block">
                                         <p>Ваш номер</p>
                                         <input class="ps-3" type="text" placeholder="+7(999)-999-99-99">
                                     </div>
                                 </div>
                                 <h3 class="text-center py-4">Выбранные услуги</h3>
-                                <div class="d-flex justify-content-evenly">
-                                    <div class="col-xxl-3 col-4 text-center ">
+                                <div class="d-flex justify-content-evenly flex-wrap">
+                                    <div class="col-xxl-3 col-md-4 col-5 text-center">
                                         <label for="wishing">Услуга</label>
                                         <br>
                                         <select name="wishing" id="wishing">
@@ -389,7 +329,7 @@
                                             <option value="3phase">3-ух Фазная мойка</option>
                                         </select>
                                     </div>
-                                    <div class="col-xxl-3 col-4 text-center">
+                                    <div class="col-xxl-3 col-md-4 col-5 text-center">
                                         <label for="wishing2">Услуга</label>
                                         <br>
                                         <select name="wishing" id="wishing2">
@@ -398,7 +338,7 @@
                                             <option value="3phase">3-ух Фазная мойка</option>
                                         </select>
                                     </div>
-                                    <div class="col-xxl-3 col-4 text-center">
+                                    <div class="col-xxl-3 col-md-4 col-5 text-center">
                                         <label for="wishing3">Услуга</label>
                                         <br>
                                         <select name="wishing" id="wishing3">
@@ -407,9 +347,18 @@
                                             <option value="3phase">3-ух Фазная мойка</option>
                                         </select>
                                     </div>
+                                    <div class="col-xxl-3 col-md-4 col-5 text-center">
+                                        <label for="wishing3">Услуга</label>
+                                        <br>
+                                        <select name="wishing" id="wishing4">
+                                            <option>Выбрать</option>
+                                            <option value="2phase">2-ух Фазная мойка</option>
+                                            <option value="3phase">3-ух Фазная мойка</option>
+                                        </select>
+                                    </div>
                                 </div>
 
-                                <div class="col-4 text-center my-5">
+                                <div class="col-12 text-center my-5">
                                     <button type="submit">Заказать звонок </button>
                                 </div>
                             </div>
