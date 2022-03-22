@@ -1,42 +1,42 @@
 "use strict"
 
 $(document).ready(function () {
+    $('#js-carousel-1').owlCarousel();
 
-    let options = {threshold: [0.5]};
-    let observerAnim = new IntersectionObserver(OnEntry, options);
-    let elements = $('.element-animation');
-    elements.each((i, el) => {
-        observerAnim.observe(el);
+    $('.button_subscribe').click(function (){
+    let valId = $(this).attr('id');
+    console.log(valId)
+    $('#communication option[value='+ valId +']').prop('selected', true);
     });
 
-    $(window).scroll(() => {
+    $('a[href^="#"]').click(function (){
+        let valhref = $(this).attr("href");
+        $("html, body").animate({scrollTop: $(valhref).offset().top - 90 + "px"});
+    })
 
-        let scrollDistance = $(window).scrollTop();
+    $('.button_subscribe').click(function (){
+        $("html, body").animate({scrollTop: $(communication).offset().top - 90 + "px"});
+    })
 
-        $('.section').each((i, el) => {
+    $('form').submit(function (event){
+        event.preventDefault();
 
-            if ($(el).offset().top - $('nav').outerHeight() <= scrollDistance) {
-                $('nav a').each((i, el) => {
-                    if ($(el).hasClass('active')) {
-                        $(el).removeClass('active');
-                    }
-                });
-                $('nav li:eq(' + i + ')').find('a').addClass('active');
-            }
-
-        })
+        $.ajax({
+            type: "POST",
+            url: "php/mail.php",
+            data: $(this).serialize()
+        }).done(function (){
+            $(this).find("input").val("")
+            alert("Успешно отправлено!");
+            $('form').trigger("reset");
+        });
+        return false;
     });
-
-    $('#js-carousel-2').owlCarousel();
 });
 
-$('a[href^="#"]').click(function (){
-    let valhref = $(this).attr("href");
-    $("html, body").animate({scrollTop: $(valhref).offset().top - 90 + "px"});
-})
-
-$('#js-carousel-2').owlCarousel({
+$('#js-carousel-1').owlCarousel({
     items: 1,
-    autoplay: true,
-    autoplayTimeout: 1500
+    dots: true,
 });
+
+$('#Phone').mask("+7(999) 999-9999");
