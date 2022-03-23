@@ -310,6 +310,11 @@ header{
     z-index: 2;
 }
 
+.name_service{
+    height: 50px;
+    text-align: center;
+}
+
 .owl-dots{
     text-align: center;
     margin-top: 20px;
@@ -345,16 +350,28 @@ header{
     border-radius: 5px;
 }
 
-.btn1{
+.case .btn:nth-child(1){
     padding: 14px 55px;
 }
 
-.btn2 {
+.case .btn:nth-child(2) {
     padding: 14px 37px;
 }
 
-.btn3{
+.case .btn:nth-child(3){
     padding: 14px 19px;
+}
+
+.carousel-1{
+
+}
+
+.carousel-2{
+    display: none;
+}
+
+.carousel-3{
+    display: none;
 }
 
 .case img{
