@@ -2,6 +2,8 @@
 
 $(document).ready(function () {
     $('#js-carousel-1').owlCarousel();
+    $('#js-carousel-2').owlCarousel();
+    $('#js-carousel-3').owlCarousel();
 
     $('.button_subscribe').click(function (){
     let valId = $(this).attr('id');
@@ -17,6 +19,8 @@ $(document).ready(function () {
     $('.button_subscribe').click(function (){
         $("html, body").animate({scrollTop: $(communication).offset().top - 90 + "px"});
     })
+
+
 
     $('form').submit(function (event){
         event.preventDefault();
@@ -34,9 +38,25 @@ $(document).ready(function () {
     });
 });
 
-$('#js-carousel-1').owlCarousel({
+$('#js-carousel-1, #js-carousel-2, #js-carousel-3 ').owlCarousel({
     items: 1,
     dots: true,
 });
 
 $('#Phone').mask("+7(999) 999-9999");
+
+
+$('#button_carousel-1').click(function (){
+        $('.carousel-1').css("display", 'block');
+        $('.carousel-2, .carousel-3').css("display", 'none');
+});
+
+$('#button_carousel-2').click(function (){
+    $('.carousel-2').css("display", 'block');
+    $('.carousel-1, .carousel-3').css("display", 'none');
+});
+
+$('#button_carousel-3').click(function (){
+    $('.carousel-3').css("display", 'block');
+    $('.carousel-1, .carousel-2').css("display", 'none');
+});
