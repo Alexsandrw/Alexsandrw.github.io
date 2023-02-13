@@ -40,13 +40,14 @@
 
   <body>
 
-    <div class="preloader vh-100 vw-100">
-      <div class="container h-100 w-100">
-        <div class="row h-100 w-100 flex-column justify-content-center">
+    <div class="preloader">
+      <div class="container vh-100 vw-100">
+        <div class="row h-100 w-100 flex-column justify-content-center m-0">
           <div class="col-12">
-            <div class="preloader__item"> 
+            <div class="preloader__item text-center">
               <h2>BIG<br>DETAIL</h2>
               <p>ул. Мира 1/2</p>
+              <img src="img/loading.gif" alt="loading Gif">
             </div>
           </div>
         </div>
@@ -163,13 +164,11 @@
               </div>
             </div>
             <div class="videoBackground">
-              <video
-                class="videoMedia d-lg-none"
-                src="vid/Back.MP4"
-                autoplay
-                muted
-                loop
-              ></video>
+              <video class="videoMedia d-lg-none" autoplay muted loop preload="metadata">
+                <source src="vid/Back.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                <source src="vid/Back.ogv" type='video/ogg; codecs="theora, vorbis"'>
+                <source src="vid/Back.webm" type='video/webm; codecs="vp8, vorbis"'>
+              </video>
             </div>
           </div>
         </div>
@@ -218,8 +217,8 @@
       </section>
 
       <section class="services vw-100" id="services">
-        <div class="container w-100">
-          <div class="row flex-column flex-nowrap align-items-center justify-content-around w-100" >
+        <div class="container vw-100">
+          <div class="row flex-column flex-nowrap align-items-center justify-content-around m-0" >
             <div class="col-12 mt-3">
               <div class="heading">
                 <h2>Что мы предлагаем</h2>
@@ -229,7 +228,7 @@
               <div class="d-flex col-xl-2 col-md-3 col-6 flex-column align-items-center justify-content-center">
                 <div class="service">
                   <div class="service-displayed">
-                    <img src="img/service/bronirovanie.jpg" alt="" />
+                    <img src="img/service/bronirovanie.webp" alt="" />
                   </div>
                   <div class="blackout"></div>
                   <div class="service-hidden d-flex flex-column justify-content-evenly align-items-center h-100 w-100 text-center" >
@@ -245,7 +244,7 @@
               <div class="d-flex col-xl-2 col-md-3 col-6 flex-column align-items-center justify-content-center" >
                 <div class="service">
                   <div class="service-displayed">
-                    <img src="img/service/tonirovka.jpg" alt="" />
+                    <img src="img/service/tonirovka.webp" alt="" />
                   </div>
                   <div class="blackout"></div>
                   <div class="service-hidden d-flex flex-column justify-content-evenly align-items-center h-100 w-100 text-center" >
@@ -261,7 +260,7 @@
               <div class="d-flex col-xl-2 col-md-3 col-6 flex-column align-items-center justify-content-center" >
                 <div class="service">
                   <div class="service-displayed">
-                    <img src="img/service/mojka.jpg" alt="" />
+                    <img src="img/service/mojka.webp" alt="" />
                   </div>
                   <div class="blackout"></div>
                   <div class="service-hidden d-flex flex-column justify-content-evenly align-items-center h-100 w-100 text-center">
@@ -277,7 +276,7 @@
               <div class="d-flex col-xl-2 col-md-3 col-6 flex-column align-items-center justify-content-center" >
                 <div class="service">
                   <div class="service-displayed">
-                    <img src="img/service/himchistkaSalona.jpg" alt="" />
+                    <img src="img/service/himchistkaSalona.webp" alt="" />
                   </div>
                   <div class="blackout"></div>
                   <div class="service-hidden d-flex flex-column justify-content-evenly align-items-center h-100 w-100 text-center" >
@@ -293,7 +292,7 @@
               <div class="d-flex col-xl-2 col-md-3 col-6 flex-column align-items-center justify-content-center">
                 <div class="service">
                   <div class="service-displayed">
-                    <img src="img/service/alarmSystem.jpeg" alt="" />
+                    <img src="img/service/alarmSystem.webp" alt="" />
                   </div>
                   <div class="blackout"></div>
                   <div class="service-hidden d-flex flex-column justify-content-evenly align-items-center h-100 w-100 text-center">
@@ -309,7 +308,7 @@
               <div class="d-flex col-xl-2 col-md-3 col-6 flex-column align-items-center justify-content-center">
                 <div class="service">
                   <div class="service-displayed">
-                    <img src="img/service/tonirovkaOptiki.jpg" alt="" />
+                    <img src="img/service/tonirovkaOptiki.webp" alt="" />
                   </div>
                   <div class="blackout"></div>
                   <div class="service-hidden d-flex flex-column justify-content-evenly align-items-center h-100 w-100 text-center">
@@ -325,7 +324,7 @@
               <div class="d-flex col-xl-2 col-md-3 col-6 flex-column align-items-center justify-content-center">
                 <div class="service">
                   <div class="service-displayed">
-                    <img src="img/service/polirovka.png" alt="" />
+                    <img src="img/service/polirovka.webp" alt="" />
                   </div>
                   <div class="blackout"></div>
                   <div class="service-hidden d-flex flex-column justify-content-evenly align-items-center h-100 w-100 text-center">
@@ -341,7 +340,7 @@
               <div class="d-flex col-xl-2 col-md-3 col-6 flex-column align-items-center justify-content-center">
                 <div class="service">
                   <div class="service-displayed">
-                    <img src="img/service/bronirovanieLobovogo.jpg" alt="" />
+                    <img src="img/service/bronirovanieLobovogo.webp" alt="" />
                   </div>
                   <div class="blackout"></div>
                   <div class="service-hidden d-flex flex-column justify-content-evenly align-items-center h-100 w-100 text-center">
@@ -360,7 +359,7 @@
               <div class="d-flex col-xl-2 col-md-3 col-6 flex-column align-items-center justify-content-center">
                 <div class="service">
                   <div class="service-displayed">
-                    <img src="img/service/ozonirovanie.jpg" alt="" />
+                    <img src="img/service/ozonirovanie.webp" alt="" />
                   </div>
                   <div class="blackout"></div>
                   <div class="service-hidden d-flex flex-column justify-content-evenly align-items-center h-100 w-100 text-center">
@@ -376,7 +375,7 @@
               <div class="d-flex col-xl-2 col-md-3 col-6 flex-column align-items-center justify-content-center">
                 <div class="service">
                   <div class="service-displayed">
-                    <img src="img/service/brend.jpeg" alt="" />
+                    <img src="img/service/brend.webp" alt="" />
                   </div>
                   <div class="blackout"></div>
                   <div class="service-hidden d-flex flex-column justify-content-evenly align-items-center h-100 w-100 text-center">
@@ -392,7 +391,7 @@
               <div class="d-flex col-xl-2 col-md-3 col-6 flex-column align-items-center justify-content-center">
                 <div class="service">
                   <div class="service-displayed">
-                    <img src="img/service/chipTyuning.jpg" alt="" />
+                    <img src="img/service/chipTyuning.webp" alt="" />
                   </div>
                   <div class="blackout"></div>
                   <div class="service-hidden d-flex flex-column justify-content-evenly align-items-center h-100 w-100 text-center">
@@ -408,7 +407,7 @@
               <div class="d-flex col-xl-2 col-md-3 col-6 flex-column align-items-center justify-content-center">
                 <div class="service">
                   <div class="service-displayed">
-                    <img src="img/service/diagnostika.jpg" alt="" />
+                    <img src="img/service/diagnostika.webp" alt="" />
                   </div>
                   <div class="blackout"></div>
                   <div class="service-hidden d-flex flex-column justify-content-evenly align-items-center h-100 w-100 text-center">
@@ -424,7 +423,7 @@
               <div class="d-flex col-xl-2 col-md-3 col-6 flex-column align-items-center justify-content-center">
                 <div class="service">
                   <div class="service-displayed">
-                    <img src="img/service/chistkaKozhi.jpg" alt="" />
+                    <img src="img/service/chistkaKozhi.webp" alt="" />
                   </div>
                   <div class="blackout"></div>
                   <div class="service-hidden d-flex flex-column justify-content-evenly align-items-center h-100 w-100 text-center">
@@ -440,7 +439,7 @@
               <div class="d-flex col-xl-2 col-md-3 col-6 flex-column align-items-center justify-content-center">
                 <div class="service">
                   <div class="service-displayed">
-                    <img src="img/service/mojkaPodKapotom.jpg" alt="" />
+                    <img src="img/service/mojkaPodKapotom.webp" alt="" />
                   </div>
                   <div class="blackout"></div>
                   <div class="service-hidden d-flex flex-column justify-content-evenly align-items-center h-100 w-100 text-center">
@@ -456,7 +455,7 @@
               <div class="d-flex col-xl-2 col-md-3 col-6 flex-column align-items-center justify-content-center" >
                 <div class="service">
                   <div class="service-displayed">
-                    <img src="img/service/zashitnoePokritie.jpg" alt="" />
+                    <img src="img/service/zashitnoePokritie.webp" alt="" />
                   </div>
                   <div class="blackout"></div>
                   <div class="service-hidden d-flex flex-column justify-content-evenly align-items-center h-100 w-100 text-center">
@@ -472,11 +471,11 @@
               <div class="d-flex col-xl-2 col-md-3 col-6 flex-column align-items-center justify-content-center" >
                 <div class="service">
                   <div class="service-displayed">
-                    <img src="img/service/shumoizolazija.jpg" alt="" />
+                    <img src="img/service/shumoizolazija.webp" alt="" />
                   </div>
                   <div class="blackout"></div>
                   <div class="service-hidden d-flex flex-column justify-content-evenly align-items-center h-100 w-100 text-center">
-                    <button class="button_subscribe" id="zashitnoePokritie">
+                    <button class="button_subscribe" id="shumoizolazija">
                       Записаться
                     </button>
                   </div>
@@ -524,72 +523,66 @@
             <div class="carousel-1 col-xl-8 col-12 text-center my-3">
               <div id="js-carousel-1" class="owl-carousel">
                 <div class="carousel-item d-flex justify-content-center">
-                  <img src="img/case/washing/washing1.jpg" alt="Фото" />
+                  <img src="img/case/washing/washing1.webp" alt="Фото" />
                 </div>
                 <div class="carousel-item d-flex justify-content-center">
-                  <img src="img/case/washing/washing2.jpg" alt="Фото" />
+                  <img src="img/case/washing/washing2.webp" alt="Фото" />
                 </div>
                 <div class="carousel-item d-flex justify-content-center">
-                  <img src="img/case/washing/washing3.jpg" alt="Фото" />
+                  <img src="img/case/washing/washing3.webp" alt="Фото" />
                 </div>
                 <div class="carousel-item d-flex justify-content-center">
-                  <img src="img/case/washing/washing4.jpg" alt="Фото" />
-                </div>
-                <div class="carousel-item d-flex justify-content-center">
-                  <img src="img/case/washing/washing5.jpg" alt="Фото" />
+                  <img src="img/case/washing/washing5.webp" alt="Фото" />
                 </div>
               </div>
             </div>
             <div class="carousel-2 col-xl-8 col-12 text-center my-3">
               <div id="js-carousel-2" class="owl-carousel">
                 <div class="carousel-item d-flex justify-content-center">
-                  <img src="img/case/toning/toning1.jpg" alt="Фото" />
+                  <img src="img/case/toning/toning1.webp" alt="Фото" />
                 </div>
                 <div class="carousel-item d-flex justify-content-center">
-                  <img src="img/case/toning/toning2.jpg" alt="Фото" />
+                  <img src="img/case/toning/toning2.webp" alt="Фото" />
                 </div>
                 <div class="carousel-item d-flex justify-content-center">
-                  <img src="img/case/toning/toning3.jpg" alt="Фото" />
+                  <img src="img/case/toning/toning3.webp" alt="Фото" />
                 </div>
                 <div class="carousel-item d-flex justify-content-center">
-                  <img src="img/case/toning/toning4.jpg" alt="Фото" />
+                  <img src="img/case/toning/toning4.webp" alt="Фото" />
                 </div>
                 <div class="carousel-item d-flex justify-content-center">
-                  <img src="img/case/toning/toning5.jpg" alt="Фото" />
+                  <img src="img/case/toning/toning5.webp" alt="Фото" />
                 </div>
                 <div class="carousel-item d-flex justify-content-center">
-                  <img src="img/case/toning/toning6.jpg" alt="Фото" />
+                  <img src="img/case/toning/toning6.webp" alt="Фото" />
                 </div>
                 <div class="carousel-item d-flex justify-content-center">
-                  <img src="img/case/toning/toning7.jpg" alt="Фото" />
+                  <img src="img/case/toning/toning7.webp" alt="Фото" />
                 </div>
                 <div class="carousel-item d-flex justify-content-center">
-                  <img src="img/case/toning/toning9.jpg" alt="Фото" />
-                </div>
-                <div class="carousel-item d-flex justify-content-center">
-                  <img src="img/case/toning/toning10.jpg" alt="Фото" />
+                  <img src="img/case/toning/toning9.webp" alt="Фото" />
                 </div>
               </div>
             </div>
             <div class="carousel-3 col-xl-8 col-12 text-center my-3">
               <div id="js-carousel-3" class="owl-carousel">
                 <div class="carousel-item d-flex justify-content-center">
-                  <img src="img/case/booking/booking1.jpg" alt="Фото" />
+                  <img src="img/case/booking/booking1.webp" alt="Фото" />
                 </div>
                 <div class="carousel-item d-flex justify-content-center">
-                  <img src="img/case/booking/booking2.jpg" alt="Фото" />
+                  <img src="img/case/booking/booking2.webp" alt="Фото" />
                 </div>
                 <div class="carousel-item d-flex justify-content-center">
-                  <img src="img/case/booking/booking3.jpg" alt="Фото" />
+                  <img src="img/case/booking/booking3.webp" alt="Фото" />
                 </div>
                 <div class="carousel-item d-flex justify-content-center">
-                  <img src="img/case/booking/booking4.jpg" alt="Фото" />
+                  <img src="img/case/booking/booking4.webp" alt="Фото" />
                 </div>
                 <div class="carousel-item d-flex justify-content-center">
-                  <img src="img/case/booking/booking5.jpg" alt="Фото" />
+                  <img src="img/case/booking/booking5.webp" alt="Фото" />
                 </div>
                 <div class="carousel-item d-flex justify-content-center">
-                  <img src="img/case/booking/booking6.jpg" alt="Фото" />
+                  <img src="img/case/booking/booking6.webp" alt="Фото" />
                 </div>
               </div>
             </div>
@@ -676,13 +669,11 @@
               </form>
             </div>
             <div class="videoBackground">
-              <video
-                class="videoMedia"
-                src="vid/back2.mp4"
-                autoplay
-                muted
-                loop
-              ></video>
+              <video class="videoMedia" autoplay muted loop preload="metadata">
+                <source src="vid/Back2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                <source src="vid/Back2.ogv" type='video/ogg; codecs="theora, vorbis"'>
+                <source src="vid/Back2.webm" type='video/webm; codecs="vp8, vorbis"'>
+              </video>
             </div>
           </div>
         </div>
@@ -722,7 +713,6 @@
       </div>
       
     </footer>
-
 
     <script>
       window.onload = function () {
